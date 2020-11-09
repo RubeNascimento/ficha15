@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <button class='botao'>HIPERMÉDIA</button>
+    <button class='botao' id='anim1'>HIPERMÉDIA</button>
 
 
     <style>
@@ -18,11 +18,14 @@
             border: none;
             color:blueviolet;
             cursor: pointer;
-
+        }
+        #anim1 {
+            border:3px solid blueviolet;
             transition-duration: 200ms;
         }
-        .botao:hover {
-            width:400px;
+        #anim1:hover {
+            color:white;
+            background-color: blueviolet;
         }
     </style>
 </body>
