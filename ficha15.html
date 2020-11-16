@@ -66,7 +66,9 @@
             </div>
         </div>
         <div class="box">
-            <div class="imgBx"><img src="https://uploads-ssl.webflow.com/5e32b98946c9311f23727c77/5e32b9b908b7056b25ce6cd7_fav-icn-256-02.png" alt=""></div>
+            <div class="imgBx">
+                <img src="https://uploads-ssl.webflow.com/5e32b98946c9311f23727c77/5e32b9b908b7056b25ce6cd7_fav-icn-256-02.png" alt="">
+            </div>
             <div class="content">
                 <h2>Title</h2>
                 <p>Esse in fugit vero aspernatur nam explicabo repellat minus optio, harum ipsam. Itaque, corrupti.</p>
@@ -455,6 +457,70 @@
             box-sizing: border-box;
             box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
             overflow: hidden;
+        }
+        .cards1 .box .imgBx {
+            position:absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            clip-path: circle(400px at center 100px);
+            transition: 0.5s;
+            transition-delay: 0.5s;
+        }
+        .cards1 .box:hover .imgBx {
+            clip-path: circle(80px at center 100px);
+            transition-delay: 0s;
+        }
+        .cards1 .box .content{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 55%;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .cards1 .box .content h2 {
+            margin: 0;
+            padding: 0;
+        }
+        .cards1 .box .content a {
+            text-decoration: none;
+            background: black;
+            color: white;
+            padding: 5px;
+            display: inline-block;
+        }
+        .cards1 .box .imgBx .img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .cards1 .box .content h2, .cards1 .box .content a, .cards1 .box .content p {
+            opacity: 0;
+            transition: 0.5s;
+            transform: translateY(20px);
+        }
+        .cards1 .box:hover .content h2 {
+            opacity: 1;
+            transform: translateY(0);
+            transition-delay: 0.5s;
+        }
+        .cards1 .box:hover .content a {
+            opacity: 1;
+            transform: translateY(0);
+            transition-delay: 0.9s;
+        }
+        .cards1 .box:hover .content p {
+            opacity: 1;
+            transform: translateY(0);
+            transition-delay: 0.7s;
         }
         .triangle {
             width: 96px;
